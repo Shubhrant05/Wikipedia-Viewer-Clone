@@ -1,0 +1,109 @@
+.form-area{
+    border-radius: 10px;
+    border: none;
+    transition: all .7s ease-in-out;
+    background-color: #4ecdc4;
+    box-shadow: 8px 8px 10px hsl(0deg 0% 6% / 39%);
+    padding: 2rem;
+    width: 50%;
+}
+
+.main{
+    height: 40vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    height: 3.5rem;
+    width: 8.5rem;
+    font-size: 1.5rem;
+    padding: 10px;
+    color:#4ecdc4;
+    background-color:white ;
+    font-weight: 600;
+    border: none;
+    margin-top: 1rem;
+    border: 2px solid #4ecdc4;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: all .7s ease-in-out;
+}
+
+button:hover{
+    background-color: #4ecdc4;
+    color: white;
+}
+.main:focus{
+    transform: translate(-25%,-25%) ;
+    width: 100%;
+}
+
+.input-area{
+    width: 95%;
+    height:1.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 8px hsl(0deg 0% 6% / 39%);
+}
+
+input:focus{
+    outline:none;
+}
+
+.data-card{
+    width:70%;
+    height:30%;
+    background:white;
+    margin-bottom:1.5rem;
+    padding:1.5rem
+}
+
+.data-card:hover{
+    border-left: 10px solid #4ecdc4;
+    cursor: pointer;
+}
+
+.logo-div{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2%;
+    font-family:"cursive";
+    align-items:"center"
+}
+.logo{
+    margin-right:3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+@keyframes spinning {
+        from { transform: rotate(0deg) }
+        to { transform: rotate(360deg) }
+}
+.logo:hover{
+        animation-name: spinning;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+@media screen and (max-width: 516px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+}
