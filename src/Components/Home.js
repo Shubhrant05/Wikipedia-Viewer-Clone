@@ -52,7 +52,7 @@ const Home = () => {
             <div className='main'>
                 <form action='#' className='form-area'>
                     <input className='input-area' value={value} onChange={inputHandler} />
-                    <ImCross style={{margin: 'auto 0rem auto 1rem' , color:'white' , fontSize:'1.5rem' , cursor:"pointer"}} onClick = {() => {onClear()}}/>
+                    <ImCross style={{ margin: 'auto 0rem auto 1rem', color: 'white', fontSize: '1.5rem', cursor: "pointer", display: `${value ? 'block' : 'none'}` }} onClick={() => { onClear() }} />
                 </form>
                 <button onClick={() => {
                     window.open("https://en.wikipedia.org/wiki/Special:Random")
