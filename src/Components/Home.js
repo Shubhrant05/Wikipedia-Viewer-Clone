@@ -56,6 +56,8 @@ const Home = () => {
                 </form>
                 <button onClick={() => {
                     window.open("https://en.wikipedia.org/wiki/Special:Random")
+                    setValue("")
+                    setData([])
                 }
                 }>Random</button>
             </div>
